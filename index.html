@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendario 2025</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+</head>
+<body>
+    <div class="controls">
+        <select id="monthSelect" class="month-select">
+            <option value="0">Gennaio</option>
+            <option value="1">Febbraio</option>
+            <option value="2">Marzo</option>
+            <option value="3">Aprile</option>
+            <option value="4">Maggio</option>
+            <option value="5">Giugno</option>
+            <option value="6">Luglio</option>
+            <option value="7">Agosto</option>
+            <option value="8">Settembre</option>
+            <option value="9">Ottobre</option>
+            <option value="10">Novembre</option>
+            <option value="11">Dicembre</option>
+        </select>
+        <button onclick="savePDF()" class="save-btn">Salva come PDF</button>
+    </div>
+    <div class="calendar-container" id="calendarContainer">
+        <h2 class="month-title" id="monthTitle">Gennaio 2025</h2>
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>LUNEDI</th>
+                    <th>MARTEDI</th>
+                    <th>MERCOLEDI</th>
+                    <th>GIOVEDI</th>
+                    <th>VENERDI</th>
+                    <th>SABATO</th>
+                    <th>DOMENICA</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody"></tbody>
+        </table>
+    </div>
+    <script src="calendar.js"></script>
+    <script>
+     
+    </script>
+</body>
+</html>
